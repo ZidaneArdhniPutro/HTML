@@ -1,0 +1,159 @@
+
+
+/* Header */
+.header {
+  padding: 20px; /* biar jaga jarak sama logo dan tulisan  */
+}
+
+.header .logo {
+  display:block ; /* biar bisa diatur marginnya */
+  margin: auto;  /* otomatis ketengah */
+  width: 145px; /* gede lecilin gambar */
+  
+}
+
+.header h1 {
+  font-size: 26px;
+  color: #1e3a8a;
+  margin-bottom: 5px; padding: 20px; /*jarak luar ke bawah*/
+}
+
+
+
+/* Section Card */
+section {
+  background: white;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 700px;  /* membuat tampilan responsif di semua ukuran layar — terutama untuk gambar dan kontainer teks.*/
+  border-radius: 12px;
+  box-shadow: 0 20px 20px rgba(105, 168, 223, 0.05);
+}
+
+.section-title {
+  font-size: 24px; /*ukuran tulisan h2 */
+  color: #1e3a8a;
+  margin-bottom: 10px; /*jarak antara h2 dan paragraf*/
+  border-left: 4px solid #fbbf24; /*  garis kuning & ketebalan 4px */
+  padding-left: 8px; /*ngasih jarak ke kanan antara garis kuning dan h2*/
+}
+
+/* Konten Avatar Favorit */
+/* Gambar */
+
+
+.photo {
+  width: 150px; /* lebar elemen */
+  height: 150px; /* tinggi elemen */
+  object-fit: cover; /*menyesuaikan gambar di dalam wadahnya*/
+  border-radius: 50%;  /* ngebuletin gambar */
+  margin-bottom: 15px; /* jarag gambar sama text */
+}
+
+/* Paragraf panjang normal */
+.desc {
+  margin-top: 10px; /* memberi jarak di bagian atas suatu elemen */
+  text-align: justify;   /* biar rapi kanan-kiri */
+}
+
+
+/* Tombol */
+.btn {
+  background: #1e3a8a;
+  color: rgb(255, 255, 255); /*warna text*/
+  padding: 10px 28px;
+  border-radius: 25px; /*biar bulet*/
+}
+
+.btn:hover {
+  background: #0f2466; /* biar warna biru biodata */
+}
+
+/* Pusatkan tombol (tanpa card putih) */
+.center {
+  text-align: center; /* biar text biodata ke tengah */
+  margin-top: 30px; /* memberi jarak bagian atas*/
+}
+.center p {
+  text-align: center;  /*biar ketengah tex*/
+}
+
+/* biodata di bawah */
+
+
+body {
+  background: #ffffff;
+  color: #000000; /* warna tulisannya */
+}
+
+.container {
+  max-width: 800px; /*elemen tidak akan lebih lebar dari nilai yang ditentukan, tapi bisa lebih kecil kalau ruangnya terbatas.*/
+  margin:  auto; /* buat ketengah */
+  padding: 20px;
+  background: rgb(223, 220, 220); /*warna abu abu*/
+  border-radius: 10px; 
+}
+
+/* Header */
+header {
+  text-align: center; /* biar tulisan nama ketengah */
+  margin-bottom: 20px; /*  memberi jarak di bagian bawah elemen */
+}
+
+header h1 {
+  font-size: 28px; /* ukuran tulisan nama zidan */
+  margin-bottom: 5px; /*memberi jarak antara nama dan tanggal  */
+}
+
+header h3 {
+  font-size: 22px; /* ukuran tanggal */
+  color: #666; /* warna tanggal */
+}
+
+/* Bagian Judul Section */
+section h2 {
+  font-size: 22px; /* ukuran biodata dll */
+  color: #569ce2; /* warnanya */
+  margin-bottom: 10px; /* memberi jarak antara h2 dan elemen bawahnya */
+  padding-bottom: 3px;
+  border-left: 4px solid #fbbf24; /* garis di samping h2 */
+  padding-left: 8px; /* jarak antara garis kuning dan h2 */
+}
+
+/* Foto + Paragraf */
+.foto { 
+  width: 150px; /* lebar elemen */
+  height: 150px; /*tinggi elemen*/
+  object-fit: cover; /* menyesuaikan gambar/vidio dalam wadahnya  */
+  border-radius: 100px; /* ngebuletin foto */
+}
+
+/* Biar paragraf tetap full width */
+section p {
+  margin-top: 10px; /* memberi jarak diantara paragraf dan foto */
+}
+
+/* List */
+ul, ol {
+  margin: 10px 0 15px 20px; /* atas, kanan,bawah,kiri */
+}
+
+/* Link */
+a {
+  color: #63ade2; /* warna link ig  */
+  text-decoration: none; /* mengapus garis bawah   */
+}
+
+a:hover {
+  text-decoration: underline; /* memberi garis bawah pada <a> href */
+}
+
+/* Footer */
+footer {
+  margin-top: 20px; /* memberi jarak kebawah  */
+  text-align: center; /* membuat tex rata tengah  */
+  font-size: 14px; /* ukuran text kembali ke index  */
+}
+
+
+

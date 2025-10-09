@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeri Foto Santri</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fdfdfd;
+      color: #333;
+    }
+
+    h2 {
+      text-align: center;
+      color: #4a90e2;
+      margin-top: 40px;
+    }
+
+    p {
+      text-align: center;
+      color: #b07a7a;
+      margin-bottom: 30px;
+    }
+
+    /* GALERI FOTO */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      justify-items: center;
+      margin: 40px auto;
+      max-width: 1000px;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 1s ease forwards;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .gallery-item {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      opacity: 0;
+      animation: fadeIn 0.8s ease forwards;
+    }
+
+    .gallery-item:nth-child(1) {
+      animation-delay: 0.2s;
+    }
+    .gallery-item:nth-child(2) {
+      animation-delay: 0.4s;
+    }
+    .gallery-item:nth-child(3) {
+      animation-delay: 0.6s;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    .gallery-item:hover {
+      transform: translateY(-5px) scale(1.03);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-bottom: 1px solid #eee;
+    }
+
+    .gallery-item p {
+      margin: 10px 0;
+      font-weight: 600;
+      color: #333;
+    }
+
+    /* BAGIAN BAWAH UNTUK VIDEO */
+    hr {
+      margin: 60px auto;
+      width: 80%;
+      border: 1px solid #ddd;
+    }
+
+    .video-section {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .video-section h2 {
+      color: #4a90e2;
+      margin-bottom: 20px;
+    }
+
+    iframe {
+      width: 80%;
+      max-width: 700px;
+      height: 400px;
+      border-radius: 10px;
+      border: none;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Galeri Foto</h2>
+  <p>Galeri karya desain dan hasil jepretan santri HSI Shiners 2025</p>
+
+  <div class="gallery">
+    <div class="gallery-item">
+      <img src="https://i.pinimg.com/736x/06/cf/28/06cf2879aa9cc31b68008420a77c6046.jpg" alt="Gunung Abang">
+      <p>Gunung Abang</p>
+    </div>
+    <div class="gallery-item">
+      <img src="https://i.pinimg.com/originals/02/7a/4e/027a4e449e3e2629e5975958c849678c.jpg" alt="Gunung Merbabu">
+      <p>Gunung Merbabu</p>
+    </div>
+    <div class="gallery-item">
+      <img src="https://i.pinimg.com/1200x/93/44/22/9344227d327801002e4f86b4434c8291.jpg" alt="Gunung Merapi">
+      <p>Gunung Merapi</p>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="video-section">
+    <h2>Sematkan Video Youtube</h2>
+    <iframe src="https://www.youtube.com/embed/fh50A6_2HR0" allowfullscreen></iframe>
+  </div>
+
+</body>
+</html>

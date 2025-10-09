@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>belajar taable</title>
+</head>
+<body>
+    <h1>Belajar Table HTML</h1>
+    <hr />
+    <!-- attr border= 1 garis tepi 1px -->
+    <table border="1">
+        <!-- tr>td*3 shorcut struktur baris x 3 kolom -->
+        <tr>
+            <td>no</td>
+            <td>nama lengkap</td>
+            <td>asal kota</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>bambang</td>
+            <td>ngawi</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>sugianto</td>
+            <td>japanes</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>sugeng</td>
+            <td>mangelang</td>
+        </tr>
+    </table>
+
+    <!-- standar table di html 5 -->
+     <h2>daftar belanja</h2>
+    <table border="1" style="width: 50%;">
+        <thead>
+            <th>no</th>
+            <th>barang</th>
+            <th>harga</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>teh desa</td>
+                <td>2.500</td>
+            </tr>
+            
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+                <td>total pengluaran</td>
+                <td>32.ooo</td>
+            </tr> 
+        </tfoot>
+        <thead>
+            <tr>
+                <th rowspan="2">no</th>
+                <th colspan="2"></th>
+            </tr>
+        </thead>
+    </table>
+</body>
+</html>
