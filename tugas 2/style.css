@@ -152,8 +152,6 @@ a:hover {
 footer {
   margin-top: 20px; /* memberi jarak kebawah  */
   text-align: center; /* membuat tex rata tengah  */
-  font-size: 14px; /* ukuran text kembali ke index  */
+  font-size: 14px/* ukuran text kembali ke index  */
 }
-
-
 

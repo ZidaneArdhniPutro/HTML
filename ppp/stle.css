@@ -1,0 +1,44 @@
+.text-tengah {
+    text-align: center;
+}
+
+.text-kiri{
+    text-align: left;
+}
+
+.text-kanan {
+    text-align: right;
+}
+
+.text-rata {
+    text-align: justify;
+}
+
+.tipis{
+    color:rgb(61, 164, 205);
+    /* atur ketebalan */
+    font-weight:100;
+    /* atur ukuran */
+    font-size: small;
+}
+
+.agaktebal{
+    color:rgb(49, 95, 95);
+    /* atur ketebalan */
+    font-weight:500;
+    /* atur ukuran */
+    font-size: 30px;
+}
+
+.tebal{
+    color:rgb(4, 46, 46);
+    /* atur ketebalan */
+    font-weight:700;
+    /* atur ukuran */
+    font-size: x-large;
+}
+
+/* hilangkan underline pada link (a) */
+.button-instagram {
+    
+}

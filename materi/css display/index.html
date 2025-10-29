@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS3: Display & Flexbox</title>
+    <!-- pico css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+    <!-- style css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- beri space di kiri-kanan halaman -->
+    <div class="container">
+      <!-- grid area -->
+      <div class="grid">
+
+        <!-- card box a -->
+
+        <div class="card">
+          <code>display: block</code>
+          <div class="area" id="box-xxxx">
+            <h3>Box 1</h3>
+            <p>(Konten 1)</p>
+          </div>
+          <div class="area">
+            <h3>box 2</h3>
+            <p>(konten 2)</p>
+          </div>
+        </div>
+        <!-- end card box b --> 
+        <div class="card">
+          <code>display: block</code>
+          <div class="area-inline-box">
+            <h3>Box 3</h3>
+            <p>(Konten 1)</p>
+          </div>
+          <div class="area-inline-box">
+            <h3>box 4</h3>
+            <p>(konten 2)</p>
+          </div>
+        </div>
+        <!-- card box c -->
+        <div class="card">
+          <code>display:inline</code>
+          <div class="area area-inline">
+            <p>A1</p>
+            <p>A2</p>
+            <p>A3</p>
+          </div>
+         </div>
+        </div>
+         <!-- card box d -->
+          <div class="card">
+          <code>display: none</code>
+          <div class="area area-inline">
+           <h3>liat</h3>
+           <p>kosong</p>
+          </div>
+         </div>
+        </div>
+        <!--  -->
+        <h2>bagian 2: flexbox(basic)</h2>
+        <div class="flexbox-area">
+          <div class="card">
+            <p>box1</p>
+          </div>
+
+          <div class="card">
+          <div>
+            <p> box2</p>
+          </div>
+
+          <div class="card">
+          <div>
+            <p> box3</p>
+          </div>
+          
+        </div>
+      </div>
+      <!--  -->
+    </div>
+  </body>
+</html>
