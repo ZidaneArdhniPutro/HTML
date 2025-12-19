@@ -1,0 +1,1057 @@
+/* biodata */
+/* --- Reset & Gaya Dasar --- */
+* {
+  box-sizing: border-box; /* Membuat padding tidak menambah lebar elemen */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4; /* Warna abu-abu muda untuk latar */
+  color: #333;
+  line-height: 1.6; /* Jarak antar baris */
+}
+
+/* --- Header & Navigasi --- */
+.header {
+  background-color: #ffffff;
+  padding: 25px 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px; /* Jarak header ke konten main */
+}
+
+.header h1 {
+  margin: 0 0 10px 0;
+  color: #0056b3; /* Warna biru yang kuat */
+  font-size: 28px;
+}
+
+.header p {
+  margin: 0;
+  font-style: italic;
+  color: #666;
+  font-size: 16px;
+}
+
+.nav {
+  list-style-type: none; /* Menghilangkan bullet points */
+  padding: 0;
+  margin: 25px 0 0 0; /* Jarak dari teks di atasnya */
+  display: flex; /* Susun link ke samping */
+  justify-content: center; /* Tengahkan link */
+  flex-wrap: wrap; /* Biarkan link turun jika tidak muat */
+}
+
+.nav li {
+  margin: 5px 10px; /* Jarak antar item link */
+}
+
+.nav a {
+  text-decoration: none; /* Menghilangkan garis bawah */
+  color: #333;
+  padding: 8px 18px;
+  border-radius: 20px; /* Membuat bentuk pil */
+  font-weight: bold;
+  font-size: 14px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transisi smooth */
+}
+
+.nav a:hover {
+  background-color: #eeeeee; /* Warna hover */
+  color: #000;
+}
+
+.nav a.active {
+  background-color: #0056b3; /* Warna untuk link yang aktif */
+  color: #ffffff;
+}
+
+/* --- Konten Utama & Card --- */
+main {
+  max-width: 900px; /* Lebar maksimum konten */
+  margin: 0 auto; /* Otomatis di tengah */
+  padding: 0 20px; /* Jarak di layar kecil */
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  margin-bottom: 25px;
+}
+
+.card h3 {
+  margin-top: 0;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 10px;
+  color: #0056b3;
+}
+
+/* --- Elemen Spesifik dalam Card --- */
+.highlight {
+  background-color: #e6f7ff; /* Latar biru muda untuk highlight */
+  padding: 3px 8px;
+  border-radius: 4px;
+  color: #0056b3;
+}
+
+.circle-img {
+  display: block; /* Agar margin auto berfungsi */
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Ini kunci untuk membuatnya bulat */
+  object-fit: cover; /* Mencegah foto jadi gepeng */
+  margin: 20px auto; /* Menengahkan gambar */
+  border: 5px solid #0056b3; /* Bingkai di sekeliling foto */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Mengatur list */
+.card ul, .card ol {
+  padding-left: 25px;
+}
+
+.card li {
+  margin-bottom: 10px; /* Jarak antar item di list */
+}
+
+/* Mengatur link kontak */
+.card a {
+  color: #0056b3;
+  font-weight: bold;
+  text-decoration: none;
+  transition: text-decoration 0.3s ease;
+}
+
+.card a:hover {
+  text-decoration: underline; /* Garis bawah saat di-hover */
+}
+
+/* --- KUNCI RESPONSIVE --- */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column; /* Susun link ke bawah */
+    align-items: center; /* Tengahkan di layar HP */
+  }
+
+  .nav li {
+    margin: 8px 0; /* Jarak vertikal antar link */
+    width: 80%; /* Lebarkan area klik */
+    text-align: center;
+  }
+
+  .nav a {
+    display: block; /* Buat link memenuhi <li> */
+    width: 100%;
+  }
+
+  .header h1 {
+    font-size: 24px; /* Kecilkan judul di HP */
+  }
+
+  .header p {
+    font-size: 14px;
+  }
+
+  main {
+    padding: 0 15px; /* Kurangi padding di HP */
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .circle-img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Penyesuaian untuk layar sangat kecil */
+  .header {
+    padding: 20px 15px;
+  }
+  .header h1 {
+    font-size: 22px;
+  }
+}
+
+/* feedback */
+
+/* --- Reset & Gaya Dasar --- */
+* {
+  box-sizing: border-box; /* Membuat padding tidak menambah lebar elemen */
+}
+
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e9ecef; /* Latar belakang abu-abu muda */
+  color: #212529; /* Warna teks gelap */
+  line-height: 1.6;
+}
+
+/* --- Layout Kontainer --- */
+main {
+  max-width: 800px; /* Lebar maksimum konten */
+  margin: 30px auto; /* Otomatis di tengah dengan margin atas/bawah */
+  padding: 0 15px; /* Jarak di sisi layar */
+}
+
+/* --- Header & Navigasi --- */
+.header {
+  background-color: #ffffff;
+  padding: 25px 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px; 
+}
+
+.header h1 {
+  margin: 0 0 5px 0;
+  color: #007bff; /* Biru terang */
+  font-size: 32px;
+}
+
+.header p {
+  margin: 0;
+  color: #6c757d;
+  font-size: 16px;
+}
+
+.nav {
+  list-style-type: none; 
+  padding: 0;
+  margin: 20px 0 0 0; 
+  display: flex; 
+  justify-content: center; 
+  flex-wrap: wrap; 
+  gap: 15px; /* Jarak antar item navigasi */
+}
+
+.nav a {
+  text-decoration: none; 
+  color: #495057;
+  padding: 8px 15px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.nav a:hover {
+  background-color: #f8f9fa; 
+  color: #007bff;
+}
+
+.nav a.active {
+  background-color: #007bff; 
+  color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 123, 255, 0.3);
+}
+
+/* --- Card Konten --- */
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.card h3 {
+  margin-top: 0;
+  border-bottom: 2px solid #e9ecef;
+  padding-bottom: 15px;
+  margin-bottom: 25px;
+  color: #343a40;
+  font-size: 24px;
+}
+
+.highlight {
+  background-color: #eaf6ff; /* Latar belakang biru sangat muda */
+  padding: 3px 8px;
+  border-radius: 4px;
+  color: #007bff;
+}
+
+/* --- STYLING FORMULIR --- */
+
+form label {
+  display: block; 
+  margin-top: 20px;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #343a40;
+  font-size: 16px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form select,
+form textarea {
+  width: 100%; 
+  padding: 12px;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+  border-color: #007bff; 
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+form textarea {
+  resize: vertical; 
+  min-height: 150px;
+}
+
+/* Gaya untuk Radio & Checkbox Groups */
+.radio-group,
+.checkbox-group {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #f0f0f0;
+  border-radius: 8px;
+  display: flex; 
+  flex-wrap: wrap;
+  gap: 25px; /* Jarak antar pilihan */
+  align-items: center;
+  background-color: #f8f9fa;
+}
+
+.radio-group input,
+.checkbox-group input {
+    /* Menggunakan pointer agar terlihat bisa diklik */
+    cursor: pointer; 
+    width: auto; 
+    margin-right: 5px;
+}
+
+/* Tombol (Button) Styling */
+.btn-group {
+  display: flex;
+  justify-content: flex-end; /* Taruh tombol ke kanan */
+  gap: 15px;
+  margin-top: 35px;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 12px 30px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer; /* Kursor Tangan 👆 */
+  transition: all 0.3s ease;
+  font-size: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  background-color: #007bff; /* Biru Primer */
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.4);
+}
+
+.btn-secondary {
+  background-color: #6c757d; /* Abu-abu untuk Reset */
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+  box-shadow: 0 4px 8px rgba(108, 117, 125, 0.4);
+}
+
+/* --- KUNCI RESPONSIVE (Media Queries) --- */
+@media (max-width: 768px) {
+  /* Navigasi vertikal di tablet/HP */
+  .nav {
+    flex-direction: column; 
+    align-items: center; 
+    gap: 10px;
+  }
+
+  .nav a {
+    width: 90%; 
+    display: block; 
+    text-align: center;
+  }
+  
+  .card {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Penyesuaian untuk layar HP kecil */
+  .header h1 {
+    font-size: 26px;
+  }
+
+  /* Tombol Bertumpuk agar mudah diklik di HP */
+  .btn-group {
+    flex-direction: column; 
+    gap: 10px;
+    justify-content: center; 
+  }
+  
+  .btn-primary,
+  .btn-secondary {
+    width: 100%; 
+  }
+
+  /* Pilihan Radio dan Checkbox bertumpuk ke bawah */
+  .radio-group,
+  .checkbox-group {
+    flex-direction: column; 
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+
+/* galeri */
+
+/* ====== 1. Variabel Dasar (Root Variables) ====== */
+/* Variabel digunakan agar warna bisa diubah dengan mudah di satu tempat */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #f7f9fb;
+  --ink: #1f2937;
+  --muted: #6b7280;
+  --brand: #2141ab; /* Warna utama (Biru) */
+  --brand-ink: #ffffff;
+  --box: #ffffff;
+  --border: #e5e7eb;
+  --accent: #ad8b41; /* Warna aksen (Kuning Emas) */
+}
+
+/* ====== 2. Body & Tipografi Umum ====== */
+html, body {
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Inter, Arial, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.6;
+}
+
+h1, h2, h3 { line-height: 1.3; margin-bottom: 8px; }
+
+/* ====== 3. Header Halaman & Konten Box ====== */
+#page-header { padding: 28px 20px 10px; text-align: center; }
+#page-title { font-size: 2rem; color: var(--brand); letter-spacing: 0.3px; }
+.subtitle { color: var(--muted); font-weight: 500; margin-top: 4px; }
+
+/* Garis pemisah. Dibatasi lebarnya agar rapi */
+hr { border: none; border-top: 1px solid var(--border); margin: 16px auto 24px; width: min(92%, 900px); }
+
+/* Kontainer utama konten (Kotak Putih) */
+.box {
+  background: var(--box);
+  width: min(92%, 900px); /* Lebar maksimum 900px, minimal 92% layar */
+  margin: 16px auto;
+  padding: 18px 20px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: 0 1px 0 rgba(17, 24, 39, 0.02);
+}
+
+.section-title {
+  font-size: 1.15rem;
+  margin-bottom: 12px;
+  color: var(--brand);
+  /* Garis aksen di samping judul section */
+  border-left: 4px solid var(--accent);
+  padding-left: 10px;
+}
+
+/* ====== 4. Navigasi Utama (Responsif) ====== */
+.main-nav { text-align: center; margin-bottom: 20px; }
+.main-nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex; /* Menggunakan Flexbox untuk menyusun item secara horizontal */
+  justify-content: center; /* Rata tengah item */
+  gap: 10px; /* Jarak antar item */
+  flex-wrap: wrap; /* Memungkinkan item turun baris jika tidak muat */
+}
+.main-nav a {
+  display: block;
+  padding: 8px 15px;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.2s, color 0.2s;
+}
+.main-nav a:hover,
+.main-nav a.active {
+  background-color: var(--brand);
+  color: var(--brand-ink);
+  border-color: var(--brand);
+}
+
+/* MEDIA QUERY: Mengubah tata letak navigasi menjadi 1 kolom di layar kecil (Mobile) */
+@media (max-width: 600px) {
+  .main-nav ul {
+    flex-direction: column; /* Mengubah arah tumpukan item menjadi vertikal */
+    align-items: stretch; /* Memaksa item mengisi seluruh lebar container */
+  }
+  .main-nav li {
+    width: 100%; /* Memastikan setiap list item mengambil lebar penuh */
+  }
+  .main-nav a {
+    padding: 10px;
+  }
+}
+
+/* ====== 5. Galeri Gambar (Flexbox responsif) ====== */
+.gallery-flex {
+  display: flex;
+  flex-wrap: wrap; /* Wajib agar item bisa turun baris */
+  gap: 15px;
+  margin-top: 15px;
+  /* Margin negatif untuk mengimbangi gap di tepi container */
+  margin-left: -7.5px;
+  margin-right: -7.5px;
+}
+
+.gallery-item {
+  /* --- PROPERTI FLEXBOX RINCI (DETAIL) --- */
+  /* flex-grow: 1 -> Memungkinkan item Tumbuh (memperluas) untuk mengisi ruang kosong yang tersisa. */
+  flex-grow: 1;
+  /* flex-shrink: 0 -> Mencegah item Menyusut di bawah ukuran dasarnya (220px). */
+  flex-shrink: 0;
+  /* flex-basis: 220px -> Lebar Awal (Dasar) yang diinginkan item. */
+  /* Jika container cukup lebar, akan ada minimal 220px, lalu item tumbuh mengisi sisa ruang. */
+  flex-basis: 220px; 
+  /* -------------------------------------- */
+  
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: var(--box);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  margin: 0 7.5px; 
+}
+
+/* MEDIA QUERY: Mengubah galeri menjadi 1 kolom di layar yang sangat kecil */
+@media (max-width: 480px) {
+  .gallery-item {
+    flex-basis: 100%; /* Memaksa lebar item menjadi 100% pada layar kecil */
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .gallery-flex {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.gallery-item img { 
+  width: 100%; 
+  height: 200px; 
+  object-fit: cover; /* Memastikan gambar mengisi penuh area tanpa distorsi */
+  display: block; 
+}
+.gallery-caption { padding: 10px; font-size: 0.9rem; color: var(--muted); }
+
+
+/* ====== 6. Video Embed Responsif (Aspek Rasio 16:9) ====== */
+.video-responsive {
+  position: relative;
+  /* Trik untuk menjaga rasio aspek 16:9: (9 / 16) * 100% = 56.25% */
+  padding-bottom: 56.25%; 
+  height: 0; /* Mengatur tinggi ke 0 agar padding-bottom menjadi penentu tinggi */
+  overflow: hidden;
+  max-width: 100%;
+  margin-top: 15px;
+  border-radius: 8px; 
+}
+
+.video-responsive iframe {
+  position: absolute; /* Diposisikan relatif terhadap .video-responsive */
+  top: 0;
+  left: 0;
+  width: 100%; /* Mengisi lebar penuh dari pembungkus */
+  height: 100%; /* Mengisi tinggi penuh dari pembungkus */
+  border: none;
+}
+
+/* --- Reset & Gaya Dasar --- */
+* {
+  box-sizing: border-box; /* Membuat padding tidak menambah lebar elemen */
+}
+
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e9ecef; /* Latar belakang abu-abu muda */
+  color: #212529; /* Warna teks gelap */
+  line-height: 1.6;
+}
+
+/* --- Layout Kontainer Utama --- */
+main {
+  max-width: 900px; /* Lebar maksimum konten */
+  margin: 30px auto; /* Otomatis di tengah dengan margin atas/bawah */
+  padding: 0 15px; /* Jarak di sisi layar */
+}
+
+/* --- Header & Navigasi --- */
+.header {
+  background-color: #ffffff;
+  padding: 25px 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px; 
+}
+
+.header h1 {
+  margin: 0 0 5px 0;
+  color: #007bff; /* Biru terang */
+  font-size: 32px;
+}
+
+.header p {
+  margin: 0;
+  color: #6c757d;
+  font-size: 16px;
+}
+
+/* --- Logo Styling (Baru untuk index.html) --- */
+.logo {
+  max-width: 90px; 
+  height: auto;
+  margin: 0 auto 15px auto; /* Di tengah, ada jarak di bawah */
+  display: block; 
+  border-radius: 8px; /* Sudut sedikit melengkung */
+}
+
+/* --- Navigasi Styling --- */
+.nav {
+  list-style-type: none; 
+  padding: 0;
+  margin: 20px 0 0 0; 
+  display: flex; 
+  justify-content: center; 
+  flex-wrap: wrap; 
+  gap: 15px; /* Jarak antar item navigasi */
+}
+
+.nav a {
+  text-decoration: none; 
+  color: #495057;
+  padding: 8px 15px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  cursor: pointer; 
+}
+
+.nav a:hover {
+  background-color: #f8f9fa; 
+  color: #007bff;
+}
+
+.nav a.active {
+  background-color: #007bff; 
+  color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 123, 255, 0.3);
+}
+
+/* --- Card Konten --- */
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-bottom: 25px;
+}
+
+.card h3 {
+  margin-top: 0;
+  border-bottom: 2px solid #e9ecef;
+  padding-bottom: 15px;
+  margin-bottom: 25px;
+  color: #343a40;
+  font-size: 24px;
+}
+
+.highlight {
+  background-color: #eaf6ff; 
+  padding: 3px 8px;
+  border-radius: 4px;
+  color: #007bff;
+}
+
+/* --- Circle Image Styling (Baru, untuk foto/gambar di dalam card) --- */
+.circle-img {
+  width: 180px; 
+  height: 180px;
+  object-fit: cover; 
+  border-radius: 50%; 
+  display: block;
+  margin: 20px auto; 
+  border: 6px solid #eaf6ff; 
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* --- STYLING TABEL JADWAL (Untuk 3-jadwal.html) --- */
+
+.card > table { 
+    width: 100%;
+    display: block; 
+    overflow-x: auto; /* Memungkinkan scroll horizontal di HP */
+    border-collapse: collapse;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+thead {
+    background-color: #007bff;
+    color: white;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    min-width: 120px; 
+    border: 1px solid #dee2e6;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f8f9fa; 
+}
+
+tbody tr:hover {
+    background-color: #e2f4ff; 
+}
+
+/* --- STYLING FORMULIR (Untuk 5-feedback.html) --- */
+
+form label {
+  display: block; 
+  margin-top: 20px;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #343a40;
+  font-size: 16px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form select,
+form textarea {
+  width: 100%; 
+  padding: 12px;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+  border-color: #007bff; 
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+form textarea {
+  resize: vertical; 
+  min-height: 150px;
+}
+
+/* Gaya untuk Radio & Checkbox Groups */
+.radio-group,
+.checkbox-group {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #f0f0f0;
+  border-radius: 8px;
+  display: flex; 
+  flex-wrap: wrap;
+  gap: 25px; 
+  align-items: center;
+  background-color: #f8f9fa;
+}
+
+/* Tombol (Button) Styling */
+.btn-group {
+  display: flex;
+  justify-content: flex-end; 
+  gap: 15px;
+  margin-top: 35px;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 12px 30px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer; 
+  transition: all 0.3s ease;
+  font-size: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+  background-color: #007bff; 
+  color: white;
+}
+
+.btn-secondary {
+  background-color: #6c757d; 
+  color: white;
+}
+
+/* --- KUNCI RESPONSIVE (Media Queries) --- */
+@media (max-width: 768px) {
+  /* Navigasi vertikal di tablet/HP */
+  .nav {
+    flex-direction: column; 
+    align-items: center; 
+    gap: 10px;
+  }
+
+  .nav a {
+    width: 90%; 
+    display: block; 
+    text-align: center;
+  }
+  
+  .card {
+    padding: 20px;
+  }
+
+  /* Font yang lebih kecil untuk tabel */
+  table {
+      font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Tombol Bertumpuk agar mudah diklik di HP */
+  .btn-group {
+    flex-direction: column; 
+    gap: 10px;
+    justify-content: center; 
+  }
+  
+  .btn-primary,
+  .btn-secondary {
+    width: 100%; 
+  }
+
+  /* Pilihan Radio dan Checkbox bertumpuk ke bawah */
+  .radio-group,
+  .checkbox-group {
+    flex-direction: column; 
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+
+
+
+
+
+/* jadwal */
+
+/* --- Reset & Gaya Dasar --- */
+* {
+  box-sizing: border-box; /* Membuat padding tidak menambah lebar elemen */
+}
+
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e9ecef; /* Latar belakang abu-abu muda */
+  color: #212529; /* Warna teks gelap */
+  line-height: 1.6;
+}
+
+/* --- Layout Kontainer --- */
+main {
+  max-width: 900px; /* Lebar maksimum konten */
+  margin: 30px auto; /* Otomatis di tengah dengan margin atas/bawah */
+  padding: 0 15px; /* Jarak di sisi layar */
+}
+
+/* --- Header & Navigasi --- */
+.header {
+  background-color: #ffffff;
+  padding: 25px 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px; 
+}
+
+.header h1 {
+  margin: 0 0 5px 0;
+  color: #007bff; /* Biru terang */
+  font-size: 32px;
+}
+
+.header p {
+  margin: 0;
+  color: #6c757d;
+  font-size: 16px;
+}
+
+.nav {
+  list-style-type: none; 
+  padding: 0;
+  margin: 20px 0 0 0; 
+  display: flex; 
+  justify-content: center; 
+  flex-wrap: wrap; 
+  gap: 15px; /* Jarak antar item navigasi */
+}
+
+.nav a {
+  text-decoration: none; 
+  color: #495057;
+  padding: 8px 15px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  cursor: pointer; /* Kursor Tangan 👆 untuk Navigasi */
+}
+
+.nav a:hover {
+  background-color: #f8f9fa; 
+  color: #007bff;
+}
+
+.nav a.active {
+  background-color: #007bff; 
+  color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 123, 255, 0.3);
+}
+
+/* --- Card Konten --- */
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.card h3 {
+  margin-top: 0;
+  border-bottom: 2px solid #e9ecef;
+  padding-bottom: 15px;
+  margin-bottom: 25px;
+  color: #343a40;
+  font-size: 24px;
+}
+
+.highlight {
+  background-color: #eaf6ff; /* Latar belakang biru sangat muda */
+  padding: 3px 8px;
+  border-radius: 4px;
+  color: #007bff;
+}
+
+/* --- STYLING TABEL JADWAL --- */
+
+/* Wrapper untuk scroll horizontal di HP */
+.card > table { 
+    width: 100%;
+    /* Ini penting untuk memastikan tabel bisa di-scroll horizontal pada layar kecil */
+    display: block; 
+    overflow-x: auto;
+    border-collapse: collapse;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+thead {
+    background-color: #007bff;
+    color: white;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    min-width: 120px; /* Memastikan kolom memiliki lebar minimum yang cukup */
+    border: 1px solid #dee2e6;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f8f9fa; /* Warna belang-belang (zebra-striping) */
+}
+
+tbody tr:hover {
+    background-color: #e2f4ff; /* Efek hover biru muda saat mouse diarahkan */
+}
+
+/* --- KUNCI RESPONSIVE (Media Queries) --- */
+@media (max-width: 768px) {
+  /* Navigasi vertikal di tablet/HP */
+  .nav {
+    flex-direction: column; 
+    align-items: center; 
+    gap: 10px;
+  }
+
+  .nav a {
+    width: 90%; 
+    display: block; 
+    text-align: center;
+  }
+  
+  .card {
+    padding: 20px;
+  }
+
+  /* Font yang lebih kecil untuk tabel di layar kecil */
+  table {
+      font-size: 14px;
+  }
+  
+  th, td {
+      padding: 10px;
+  }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulir Umpan Balik</title>
+  <link rel="stylesheet" href="style .css">
+</head>
+<body>
+  <header class="header">
+    <h1>Formulir Umpan Balik</h1>
+    <p>Kritik, Saran, dan Masukan</p>
+    <nav>
+      <ul class="nav">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="biodata.html">Biodata</a></li>
+        <li><a href="jadwal.html">Jadwal</a></li>
+        <li><a href="galeri.html">Galeri</a></li>
+        <li><a href="feedback.html" class="active">Feedback</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="card">
+      <h3><span class="highlight">Formulir Kontak & Saran</span></h3>
+      <form>
+        <label>Nama Anda (Opsional):</label>
+        <input type="text" placeholder="Tulis nama Anda">
+
+        <label>Email Anda:</label>
+        <input type="email" placeholder="nama@email.com" required>
+
+        <label>Rating Kepuasan Website (Skala 1-10):</label>
+        <input type="number" min="1" max="10" required>
+
+        <label>Rekomendasi Website Ini?</label>
+        <div class="radio-group">
+          <input type="radio" name="rekom" value="ya"> Ya, Sangat
+          <input type="radio" name="rekom" value="mungkin"> Mungkin Saja
+          <input type="radio" name="rekom" value="tidak"> Tidak
+        </div>
+
+        <label>Topik yang paling menarik:</label>
+        <div class="checkbox-group">
+          <input type="checkbox"> Biodata
+          <input type="checkbox"> Jadwal
+          <input type="checkbox"> Galeri
+        </div>
+
+        <label>Saran Pengembangan di Bidang:</label>
+        <select>
+          <option>-- Pilih Bidang --</option>
+          <option>progremer</option>
+          <option>desain</option>
+          <option>jaringan</option>
+          <option>caiber scurity</option>
+        </select>
+
+        <label>Pesan/Saran Lengkap:</label>
+        <textarea placeholder="Tulis pesan dan saran Anda secara detail di sini..."></textarea>
+
+        <div class="btn-group">
+          <button type="reset" class="btn-secondary">Atur Ulang</button>
+          <button type="submit" class="btn-primary">Kirim Feedback</button>
+        </div>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
