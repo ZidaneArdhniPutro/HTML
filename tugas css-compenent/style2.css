@@ -1,0 +1,219 @@
+/* Gaya Dasar */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Warna latar belakang umum */
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+.section-title {
+    font-size: 18px;
+    color: #0d6efd; /* Biru terang untuk judul bagian */
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* 1. Alert Info Styling */
+.alert-info-section .section-title {
+    color: #333; /* Warna hitam biasa untuk judul "1 Alert Info" */
+}
+
+.alert-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #cfe2ff; /* Latar belakang biru muda */
+    border-left: 5px solid #0d6efd; /* Garis biru di kiri */
+    border-radius: 4px;
+    color: #055160;
+    font-size: 14px;
+}
+
+.info-icon {
+    background-color: #0d6efd; /* Warna biru untuk ikon 'i' */
+    color: #fff;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.alert-box p {
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #6c757d;
+    cursor: pointer;
+    line-height: 1;
+}
+
+/* 2. Profile Card Styling */
+.profile-card {
+    width: 200px;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    text-align: center;
+    box-shadow: none;
+}
+
+.profile-header {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.profile-img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #0d6efd; /* Border biru di sekeliling gambar */
+}
+
+.status-badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #198754; /* Hijau */
+    color: white;
+    font-size: 10px;
+    padding: 2px 6px;
+    border-radius: 10px;
+    transform: translate(5px, -5px);
+    font-weight: bold;
+}
+
+.name {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.title {
+    font-size: 14px;
+    color: #6c757d;
+    margin: 5px 0 0 0;
+}
+
+/* 3. Pricing Card Styling */
+.pricing-container {
+    display: flex ;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.pricing-card {
+    flex: 20;
+    padding: 30px 20px;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.8s, box-shadow 0.3s;
+}
+
+.pricing-card:hover {
+    transform: translateY(-125px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.pro-highlight {
+    border: 2px solid #6f42c1; /* Garis ungu untuk kartu Pro */
+    box-shadow: 0 0 15px rgba(111, 66, 193, 0.15);
+}
+
+.plan-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 28px;
+    font-weight: bold;
+    color: #0d6efd; /* Biru terang */
+    margin-bottom: 20px;
+}
+
+.pro-highlight .price {
+    color: #6f42c1; /* Ungu untuk harga Pro */
+}
+
+.features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.features li {
+    font-size: 14px;
+    padding: 5px 0;
+    color: #6c757d;
+}
+
+.select-button {
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 4px;
+    cursor: pointer; /* ngubah cursor menjadi tangan */
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.select-button:hover {
+    background-color: #0a58ca;
+}
+
+.pro-button {
+    background-color: #6f42c1; /* Ungu untuk tombol Pro */
+}
+
+.pro-button:hover {
+    background-color: #5d359a;
+}
+
+/* Media Query untuk Responsiveness */
+@media (max-width: 768px) {
+    .pricing-container {
+        flex-direction: column;
+        
+    }
+
+    .pricing-card {
+        margin-bottom: 15px;
+    }
+}
